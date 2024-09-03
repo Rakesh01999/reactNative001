@@ -13,7 +13,7 @@ npx  react-native run-android
 ```
 
 
-## Borders
+## Borders at App.tsx
 ```
 const App = () => {
   return (
@@ -34,6 +34,27 @@ const App = () => {
     </SafeAreaView>
   )
 }
+```
+
+## Margins at App.tsx
+```
+<View style={{
+        backgroundColor:'yellow', 
+        // margin:10,
+        // marginTop:5,
+        // marginLeft:50,
+        // marginRight:50,
+        // marginBottom:50,
+        marginVertical:50,
+        marginHorizontal:50
+      }}>
+        <Text>Hello, World</Text>
+      </View>
+      <View style={{
+        backgroundColor:'orange'
+      }}>
+        <Text>Hello, World</Text>
+      </View>
 ```
 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).

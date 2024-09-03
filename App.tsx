@@ -11,15 +11,19 @@ const App = () => {
   return (
     <SafeAreaView>
       <View style={{
-        borderWidth: 1,
-        borderTopWidth: 5,
-        borderRightWidth: 10,
-        borderLeftWidth: 10,
-        borderBottomWidth: 10,
-        borderColor: 'green',
-        borderRadius:10,
-        borderBottomRightRadius:50,
-        borderTopLeftRadius:50
+        backgroundColor:'yellow', 
+        // margin:10,
+        // marginTop:5,
+        // marginLeft:50,
+        // marginRight:50,
+        // marginBottom:50,
+        marginVertical:50,
+        marginHorizontal:50
+      }}>
+        <Text>Hello, World</Text>
+      </View>
+      <View style={{
+        backgroundColor:'orange'
       }}>
         <Text>Hello, World</Text>
       </View>
