@@ -36,6 +36,7 @@ const App = () => {
 }
 ```
 
+
 ## Margins at App.tsx
 ```
 <View style={{
