@@ -1,12 +1,13 @@
 ## Basic Commands
-1. ```
+1. 
+```
 npm install -g npm@10.8.1
 ```
-2. 
+2. Project creation:
 ```
 npx react-native@latest init reactNative01
 ```
-3. 
+3. Run Android:
 ```
 npx  react-native run-android
 ```
