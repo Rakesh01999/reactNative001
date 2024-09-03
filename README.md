@@ -13,6 +13,29 @@ npx  react-native run-android
 ```
 
 
+## Borders
+```
+const App = () => {
+  return (
+    <SafeAreaView>
+      <View style={{
+        borderWidth: 1,
+        borderTopWidth: 5,
+        borderRightWidth: 10,
+        borderLeftWidth: 10,
+        borderBottomWidth: 10,
+        borderColor: 'green',
+        borderRadius:10,
+        borderBottomRightRadius:50,
+        borderTopLeftRadius:50
+      }}>
+        <Text>Hello, World</Text>
+      </View>
+    </SafeAreaView>
+  )
+}
+```
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started

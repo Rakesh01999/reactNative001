@@ -6,15 +6,6 @@ import {
   SafeAreaView
 } from 'react-native'
 
-// function App(){
-//   return(
-//     <SafeAreaView>
-//       <View>
-//         <Text>Hello</Text>
-//       </View>
-//     </SafeAreaView>
-//   )
-// }
 
 const App = () => {
   return (
