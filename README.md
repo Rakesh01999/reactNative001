@@ -164,3 +164,16 @@ This guide will walk you through setting up an existing React Native project to 
  E:\React Native\React Native - Nata Vacheishvili\React Native Mobile App Development\reactNative001\android\app\build\outputs\apk\debug
 
  -> "app-debug" - send this file to the physical device .
+
+  PC ->cmd -> `ipconfig`
+  ```bash
+  ipconfig
+  ```
+  -> copy the `IPv4 Address`.
+
+  **Go to Physical Device**
+  install 'app-debug' -apk > open it > shake your device >  settings > click- Debug Server host and port for device > paste the the `IPv4 Address`:8081 > ok
+
+  Now, Go to Metro (Node) > Reload by commanding `r`
+  
+
