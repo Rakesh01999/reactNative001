@@ -1,3 +1,18 @@
+## Basic Commands
+1. 
+```
+npm install -g npm@10.8.1
+```
+2. 
+```
+npx react-native@latest init reactNative01
+```
+3. 
+```
+npx  react-native run-android
+```
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
