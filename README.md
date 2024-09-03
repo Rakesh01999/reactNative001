@@ -149,8 +149,7 @@ This guide will walk you through setting up an existing React Native project to 
  Enable Developer Options: Navigate to your phone’s Settings > About phone, and tap on the Build number seven times to unlock Developer Options.
  Activate USB Debugging: Go to Settings > Developer options and enable USB debugging.
  Enable Wireless Debugging: If your device supports it, also activate Wireless debugging.
- Connect Your Device via USB
- Plug your physical device into your computer using a USB cable. When prompted, grant the necessary permissions on your device.
+ 
 
  Verify Device Connection
  Open a terminal and ensure your device is connected by running:
