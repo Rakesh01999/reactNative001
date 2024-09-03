@@ -158,10 +158,9 @@ This guide will walk you through setting up an existing React Native project to 
 
 **Go to your pc**
  Go to -> 
- E:\React Native\React Native - Nata Vacheishvili\React Native Mobile App Development\reactNative001\android\app\build\outputs\apk\debug
+ E:\React Native\React Native - Project repo\React Native Project\android\app\build\outputs\apk\debug
 
  *Example:*
  E:\React Native\React Native - Nata Vacheishvili\React Native Mobile App Development\reactNative001\android\app\build\outputs\apk\debug
 
  -> "app-debug" - send this file to the physical device .
- 
