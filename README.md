@@ -139,14 +139,29 @@ To learn more about React Native, take a look at the following resources:
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
 
 
-# Connect React Native app with "Physical Device" via wifi
-# Connect React Native App to a Physical Device via Wi-Fi
+
+# Connect React Native App to a "Physical Device" via Wi-Fi
 
 This guide will walk you through setting up an existing React Native project to run on a physical device using Wi-Fi.
 
 ## Steps
 
-1. **Install React Native CLI Globally**  
-   Ensure that you have the React Native CLI installed globally. Run the following command in your terminal:
-   ```bash
-   npm install -g react-native-cli
+**Prepare Your Physical Device**
+ Enable Developer Options: Navigate to your phone’s Settings > About phone, and tap on the Build number seven times to unlock Developer Options.
+ Activate USB Debugging: Go to Settings > Developer options and enable USB debugging.
+ Enable Wireless Debugging: If your device supports it, also activate Wireless debugging.
+ Connect Your Device via USB
+ Plug your physical device into your computer using a USB cable. When prompted, grant the necessary permissions on your device.
+
+ Verify Device Connection
+ Open a terminal and ensure your device is connected by running:
+
+**Go to your pc**
+ Go to -> 
+ E:\React Native\React Native - Nata Vacheishvili\React Native Mobile App Development\reactNative001\android\app\build\outputs\apk\debug
+
+ *Example:*
+ E:\React Native\React Native - Nata Vacheishvili\React Native Mobile App Development\reactNative001\android\app\build\outputs\apk\debug
+
+ -> "app-debug" - send this file to the physical device .
+ 
