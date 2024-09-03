@@ -145,8 +145,7 @@ To learn more about React Native, take a look at the following resources:
 This guide will walk you through setting up an existing React Native project to run on a physical device using Wi-Fi.
 
 ## Steps
-
-**Prepare Your Physical Device**
+### **Prepare Your Physical Device**
  Enable Developer Options: Navigate to your phone’s Settings > About phone, and tap on the Build number seven times to unlock Developer Options.
  Activate USB Debugging: Go to Settings > Developer options and enable USB debugging.
  Enable Wireless Debugging: If your device supports it, also activate Wireless debugging.
