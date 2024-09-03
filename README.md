@@ -1,6 +1,5 @@
 ## Basic Commands
-1. 
-```
+1. ```
 npm install -g npm@10.8.1
 ```
 2. 
