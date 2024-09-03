@@ -9,7 +9,7 @@ npx react-native@latest init reactNative01
 ```
 3. Run Android:
 ```
-npx  react-native run-android
+npx react-native run-android
 ```
 
 
@@ -137,3 +137,16 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+
+# Connect React Native app with "Physical Device" via wifi
+# Connect React Native App to a Physical Device via Wi-Fi
+
+This guide will walk you through setting up an existing React Native project to run on a physical device using Wi-Fi.
+
+## Steps
+
+1. **Install React Native CLI Globally**  
+   Ensure that you have the React Native CLI installed globally. Run the following command in your terminal:
+   ```bash
+   npm install -g react-native-cli
