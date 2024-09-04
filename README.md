@@ -125,6 +125,7 @@ const App = () => {
 ## Component -code
 ```
 // Components>MyText>MyText.js
+
 import React from "react";
 
 import { Text } from "react-native";
@@ -135,6 +136,37 @@ const MyText = () => {
 
 export default MyText ; 
 ```
+
+## Stylesheets -code
+```
+import { StyleSheet } from "react-native";
+
+const style = StyleSheet.create({
+    text:{
+        color:'red'
+    },
+    text1:{
+        color:'blue'
+    }
+});
+
+export default style ;
+
+// Components>MyText>MyText.js
+
+import React from "react";
+import style from "./style";
+
+import { Text } from "react-native";
+
+const MyText = () => {
+    return <Text style={[style.text, style.text1, {color:'green'}]}> Hello , React Native World !</Text>
+}
+
+export default MyText ; 
+```
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
