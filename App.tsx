@@ -9,7 +9,7 @@ import {
 
 const App = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{backgroundColor:'green', height: '100%'}}>
       <View style={{position:'relative', backgroundColor:'blue', padding: 20}}>
         <View style={{
           backgroundColor: 'yellow',
