@@ -18,6 +18,9 @@ const App = () => {
       <Item name={'Chair'} price={100}></Item>
       <Item name={'Table'} price={340}></Item>
       <Item name={'Desk'} price={210}></Item>
+      <View>
+        <MyText/>
+      </View>
     </SafeAreaView>
   )
 }
