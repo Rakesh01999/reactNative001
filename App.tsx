@@ -9,33 +9,21 @@ import {
 
 const App = () => {
   return (
-    <SafeAreaView style={{backgroundColor:'green', height: '100%'}}>
-      <View style={{position:'relative', backgroundColor:'blue', padding: 20}}>
-        <View style={{
-          backgroundColor: 'yellow',
-          // margin:10,
-          // marginTop:5,
-          // marginLeft:50,
-          // marginRight:50,
-          // marginBottom:50,
-          marginVertical: 50,
-          marginHorizontal: 50,
-          padding: 10,
-          // paddingLeft:100,
-          // paddingHorizontal:"auto",
-          // paddingVertical:"auto",
-          paddingVertical: 50,
-          paddingHorizontal: 50,
-          position: 'relative'
-        }}>
-          <Text>Hello, World 1</Text>
-        </View>
-        <View style={{
-          backgroundColor: 'orange',
-          // backgroundColor: 'green',
-          position: 'relative'
-        }}>
-          <Text>Hello, World 2</Text>
+    <SafeAreaView>
+      <View>
+        <View>
+          <Text style={{
+            color: 'blue',
+            fontFamily:'Arial',
+            fontSize:30,
+            fontStyle:'italic',
+            fontWeight:'bold', 
+            letterSpacing:10,
+            lineHeight:50,
+            // textAlign:'right',
+            textAlign:'center',
+            paddingTop:20
+          }}>Hello, World !</Text>
         </View>
       </View>
     </SafeAreaView>

@@ -97,6 +97,31 @@ const App = () => {
 }
 ```
 
+## Text Styles
+
+```
+  return (
+    <SafeAreaView>
+      <View>
+        <View>
+          <Text style={{
+            color: 'blue',
+            fontFamily:'Arial',
+            fontSize:30,
+            fontStyle:'italic',
+            fontWeight:'bold', 
+            letterSpacing:10,
+            lineHeight:50,
+            // textAlign:'right',
+            textAlign:'center',
+            paddingTop:20
+          }}>Hello, World !</Text>
+        </View>
+      </View>
+    </SafeAreaView>
+  )
+```
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
