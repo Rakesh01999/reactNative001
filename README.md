@@ -166,6 +166,25 @@ const MyText = () => {
 export default MyText ; 
 ```
 
+## View Component -code
+```
+
+  return (
+    <SafeAreaView>
+      <View style={{backgroundColor: 'blue', height: 100, paddingVertical:25, paddingHorizontal:100}}>
+          <Text style={{color:'white', fontSize:20}}>This is going to be our header container</Text>
+      </View>
+      <View style={{backgroundColor:'yellow'}}>
+        <MyText />
+        <MyText />
+        <MyText />
+      </View>
+      <View>
+        <Text>All Rights Reserved</Text>
+      </View>
+    </SafeAreaView>
+  )
+```
 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
