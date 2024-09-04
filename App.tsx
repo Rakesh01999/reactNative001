@@ -1,5 +1,6 @@
 import React from "react";
 import MyText from "./Components/MyText/MyText";
+import Item from "./Components/Item/Item";
 
 import {
   View,
@@ -11,17 +12,12 @@ import {
 const App = () => {
   return (
     <SafeAreaView>
-      <View style={{backgroundColor: 'blue', height: 100, paddingVertical:25, paddingHorizontal:100}}>
-          <Text style={{color:'white', fontSize:20}}>This is going to be our header container</Text>
+      <View style={{backgroundColor: 'blue', height: 100, paddingVertical:25, paddingHorizontal:120}}>
+          <Text style={{color:'white', fontSize:20}}>React Native by Rakesh</Text>
       </View>
-      <View style={{backgroundColor:'yellow'}}>
-        <MyText />
-        <MyText />
-        <MyText />
-      </View>
-      <View>
-        <Text>All Rights Reserved</Text>
-      </View>
+      <Item name={'Chair'} price={100}></Item>
+      <Item name={'Table'} price={340}></Item>
+      <Item name={'Desk'} price={210}></Item>
     </SafeAreaView>
   )
 }
