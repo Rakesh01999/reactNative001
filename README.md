@@ -122,6 +122,19 @@ const App = () => {
   )
 ```
 
+## Component -code
+```
+// Components>MyText>MyText.js
+import React from "react";
+
+import { Text } from "react-native";
+
+const MyText = () => {
+    return <Text>Hello , React Native World !</Text>
+}
+
+export default MyText ; 
+```
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
