@@ -4,11 +4,13 @@ import {
   View,
   Text,
   SafeAreaView,
-  Image
+  TextInput
 } from 'react-native'
 
 const App = () => {
-  const [imageSource, setImageSource] = useState({uri:'http://example.com'})
+  const [textValue, setTextValue] = useState('')
+  const [emailValue, setEmailValue] = useState('')
+  const [passwordValue, setPasswordValue] = useState('')
   return (
     <SafeAreaView>
       <View>
@@ -16,29 +18,50 @@ const App = () => {
           <Text style={{ color: 'white', fontSize: 20 }}>React Native by Rakesh</Text>
         </View>
         <View style={{ backgroundColor: 'green', height: 50, paddingVertical: 5, paddingHorizontal: 100, alignItems: "center" }}>
-          <Text style={{ color: 'yellow', fontSize: 20 }}>Image Component</Text>
+          <Text style={{ color: 'yellow', fontSize: 20 }}>Text Input Component</Text>
         </View>
       </View>
 
-      <View>
-        {/* <Image source={require('./assets/images/cake.png')} */}
-        <Image source={imageSource}
-          // style={{ height: 200, width: 200 , backgroundColor:'red'}}
-          style={{ height: '100%', width: '100%' , backgroundColor:'red'}}
-          // resizeMode={"contain"}
-          // resizeMode={"stretch"}
-          // resizeMode={"repeat"}
-          resizeMode={"center"}
-          onError={()=>{
-            console.log('Error has been detected while loading an image')
-            setImageSource(require('./assets/images/cake.png'))
-          }}
-          />
-      </View>
-      <View>
-        <Image source={{ uri: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1089&q=80" }}
-          style={{ height: 300, width: 300 }} />
-      </View>
+      <TextInput style={{ borderWidth: 1, borderRadius: 10, marginTop: 20 }}
+        value={textValue}
+        onChangeText={value => {
+          // console.log(value);
+          setTextValue(value);
+        }}
+        autoFocus={true}
+        //  autoFocus={false}
+        placeholder={'Please Enter Your Name'}
+      />
+
+      <TextInput style={{ borderWidth: 1, borderRadius: 10, marginTop: 20 }}
+        value={emailValue}
+        onChangeText={value => {
+          // console.log(value);
+          setEmailValue(value);
+        }}
+        // returnKeyType={'route'}
+        // returnKeyType={'go'}
+        // returnKeyType={'next'}
+        returnKeyType={'search'}
+        keyboardType={'email-address'}
+        autoFocus={true}
+        //  autoFocus={false}
+        placeholder={'Please Enter Your Email'}
+      />
+
+      <TextInput style={{ borderWidth: 1, borderRadius: 10, marginTop: 20 }}
+        value={passwordValue}
+        onChangeText={value => {
+          // console.log(value);
+          setPasswordValue(value);
+        }}
+        // keyboardType={'default'}
+        // keyboardType={'numeric'}
+        keyboardType={'numeric'}
+        secureTextEntry={true}
+        autoFocus={true}
+        placeholder={'Please Enter Your Password'}
+      />
     </SafeAreaView>
   )
 }
