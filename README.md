@@ -536,7 +536,28 @@ const App = () => {
 
 ```
 
-
+## ScrollView Component
+```
+<ScrollView
+        onScroll={() => {
+          console.log('We are now scrolling')
+        }}
+        contentContainerStyle={{ backgroundColor: "red", height: 600 }}
+        showsVerticalScrollIndicator={false}
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}>
+        <Image source={require('./assets/images/cake.png')}
+          style={{ height: 500, width: 500 }}
+        />
+        <Image source={require('./assets/images/cake.png')}
+          style={{ height: 500, width: 500 }}
+        />
+        <Image source={require('./assets/images/cake.png')}
+          style={{ height: 500, width: 500 }}
+        />
+      </ScrollView>
+      
+```
 
 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
