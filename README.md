@@ -556,8 +556,46 @@ const App = () => {
           style={{ height: 500, width: 500 }}
         />
       </ScrollView>
-      
 ```
+
+## Button Component Form Submission
+```
+      <View>
+        <ScrollView>
+          <TextInput
+            value={email}
+            keyboardType={'email-address'}
+            style={{ borderWidth: 1, borderRadius: 7, marginHorizontal: 8, marginTop: 10 }}
+            placeholder={'Please enter your email here'}
+            onChangeText={value => {
+              setEmail(value)
+            }}
+          />
+          <TextInput
+            value={password}
+            secureTextEntry={true}
+            style={{ borderWidth: 1, borderRadius: 7, marginHorizontal: 8, marginTop: 10 }}
+            placeholder={'Please enter your password here'}
+            onChangeText={value => {
+              setPassword(value)
+            }}
+          />
+          <Pressable
+            style={[{ backgroundColor: 'black', margin: 10, borderRadius: 20 },
+            email.length === 0 || password.length < 8 && { opacity: 0.5 }]}
+            disabled={email.length === 0 || password.length < 8}
+            onPress={() => {
+              console.log('clicked');
+              console.log(email, password);
+            }}
+          >
+            <Text style={{ color: 'white', textAlign: 'center', padding: 10 }}>Submit</Text>
+          </Pressable>
+        </ScrollView>
+      </View>
+```
+
+
 
 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
