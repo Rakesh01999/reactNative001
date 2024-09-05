@@ -10,15 +10,12 @@ import {
   Button
 } from 'react-native'
 import style from "./Components/MyText/style";
+import { ThemeProvider } from "./Components/ThemeProvider";
+import { ThemeToggle } from "./Components/ThemeToggle";
 
 
 const App = () => {
-  let array = Array(300).fill(0);
-  const ScrollViewRef = useRef(null);
-
-  const handleClick = () => { 
-    ScrollViewRef.current.scrollTo({x:0, y:0, animated:true}) ;
-  };
+  
   return (
     <SafeAreaView>
       <View>
@@ -26,17 +23,13 @@ const App = () => {
           <Text style={{ color: 'white', fontSize: 20 }}>React Native by Rakesh</Text>
         </View>
         <View style={{ backgroundColor: 'green', height: 50, paddingVertical: 5, paddingHorizontal: 100, alignItems: "center" }}>
-          <Text style={{ color: 'yellow', fontSize: 20 }}>refs and useRef</Text>
+          <Text style={{ color: 'yellow', fontSize: 20 }}>useContext</Text>
         </View>
       </View>
 
-
-
-      <Button onPress={handleClick} title="Scroll To Top"></Button>
-
-      <ScrollView ref={ScrollViewRef} style={{marginBottom:300}}>
-        {array.map((value, index: number) => <Text key={index} style={{ color: 'black' }}>{index}  Hello World</Text>)}
-      </ScrollView>
+      <ThemeProvider>
+        <ThemeToggle></ThemeToggle>
+      </ThemeProvider> 
         
     </SafeAreaView>
   )
