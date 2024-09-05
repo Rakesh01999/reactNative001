@@ -1,6 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import MyText from "./Components/MyText/MyText";
-import Item from "./Components/Item/Item";
 
 import {
   View,
@@ -9,13 +7,10 @@ import {
   ScrollView,
   Button
 } from 'react-native'
-import style from "./Components/MyText/style";
-import { ThemeProvider } from "./Components/ThemeProvider";
-import { ThemeToggle } from "./Components/ThemeToggle";
-
+import useToggle from "./customHooks/useToggle";
 
 const App = () => {
-  
+  const [isOn, toggleOn]= useToggle(false);
   return (
     <SafeAreaView>
       <View>
@@ -23,14 +18,13 @@ const App = () => {
           <Text style={{ color: 'white', fontSize: 20 }}>React Native by Rakesh</Text>
         </View>
         <View style={{ backgroundColor: 'green', height: 50, paddingVertical: 5, paddingHorizontal: 100, alignItems: "center" }}>
-          <Text style={{ color: 'yellow', fontSize: 20 }}>useContext</Text>
+          <Text style={{ color: 'yellow', fontSize: 20 }}>Custom Hook</Text>
         </View>
       </View>
 
-      <ThemeProvider>
-        <ThemeToggle></ThemeToggle>
-      </ThemeProvider> 
-        
+        <Text>{isOn ? 'ON' : 'OFF'}</Text>
+      <Button title={"Toggle"} onPress={toggleOn}></Button>
+      
     </SafeAreaView>
   )
 }
