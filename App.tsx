@@ -7,12 +7,15 @@ import {
   ScrollView,
   TextInput,
   Button,
-  Pressable
+  Pressable,
+  TouchableOpacity,
+  Switch
 } from 'react-native'
 
 const App = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [shouldKeepLogin, setShouldKeepLogin] = useState(true);
   return (
     <SafeAreaView>
       <View>
@@ -44,21 +47,29 @@ const App = () => {
               setPassword(value)
             }}
           />
-          <Pressable
+          <View style={{flex:1, flexDirection:'row', alignItems:'center'}}>
+            <Switch value={shouldKeepLogin} onValueChange={(value) => {
+              setShouldKeepLogin(value);
+            }} />
+            <Text>Keep me logged in</Text>
+          </View>
+
+          <TouchableOpacity
             style={[{ backgroundColor: 'black', margin: 10, borderRadius: 20 },
             email.length === 0 || password.length < 8 && { opacity: 0.5 }]}
             disabled={email.length === 0 || password.length < 8}
             onPress={() => {
               console.log('clicked');
-              console.log(email, password);
+              console.log(email, password, shouldKeepLogin);
             }}
           >
             <Text style={{ color: 'white', textAlign: 'center', padding: 10 }}>Submit</Text>
-          </Pressable>
+          </TouchableOpacity>
         </ScrollView>
       </View>
     </SafeAreaView>
   )
 }
+
 
 export default App;
